@@ -26,7 +26,7 @@ stepsTakenEveryDay <- tapply(activity$steps, activity$date,sum, na.rm=T)
 ```
 
 ## Histogram of the total number of steps taken each day
-```{r echo=FALSE}
+```{r echo=TRUE}
 qplot(stepsTakenEveryDay, binwidth=1000, xlab="Total number of steps taken each day")
 ```
 
@@ -42,7 +42,7 @@ meanStepsPerTimeInterval <- aggregate(steps ~ interval, activity, FUN = mean, na
 ```
 
 # Time-Series Plot
-```{r}
+```{r echo=TRUE}
 ggplot(data=meanStepsPerTimeInterval, aes(x=interval, y=steps)) +
     geom_line() +
     xlab("5-minute interval") +
@@ -95,7 +95,7 @@ activityFilled$dayType <- sapply(activityFilled$date, FUN=getDayType)
 
 ## Making a time series plot showing weekday and weekend pattern
 
-```{r}
+```{r echo=TRUE}
 
 meanFilledStepsPerTimeInterval <- aggregate(steps ~ interval + dayType, activityFilled, mean)
 ggplot(meanFilledStepsPerTimeInterval, aes(interval, steps)) + geom_line() + facet_grid(dayType ~ .) +
