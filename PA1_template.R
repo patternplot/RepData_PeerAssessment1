@@ -5,7 +5,7 @@ require(Hmisc)
 if(!exists("activity")){
     activity <- read.csv("activity.csv",header=TRUE, sep=",")
 }
-
+ 
 ##  Determining mean total number of steps taken per day
 stepsTakenEveryDay <- tapply(activity$steps, activity$date,sum, na.rm=T)
 

@@ -4,7 +4,7 @@
 require(ggplot2)
 require(Hmisc)
 ```
-
+ 
 ## Load unzipped csv file from the working directory
 ```{r}
 if(!exists("activity")){

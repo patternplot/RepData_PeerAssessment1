@@ -5,43 +5,8 @@
 require(ggplot2)
 ```
 
-```
-## Loading required package: ggplot2
-```
-
 ```r
 require(Hmisc)
-```
-
-```
-## Loading required package: Hmisc
-```
-
-```
-## Warning: package 'Hmisc' was built under R version 3.2.4
-```
-
-```
-## Loading required package: lattice
-```
-
-```
-## Loading required package: survival
-```
-
-```
-## Loading required package: Formula
-```
-
-```
-## 
-## Attaching package: 'Hmisc'
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     format.pval, round.POSIXt, trunc.POSIXt, units
 ```
 
 ## Load unzipped csv file from the working directory
