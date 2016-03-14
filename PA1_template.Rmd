@@ -1,11 +1,3 @@
----
-title: "Reproducible Data Analysis"
-output:
-  html_document:
-    toc: false
-    theme: united
----
-
 # Reproducible Data Analysis - Peer Assessment
 
 ```{r}
